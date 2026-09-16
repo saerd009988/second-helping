@@ -542,14 +542,21 @@ function buildAbout() {
         <p>If a step does not work the way it is written, or a quantity looks wrong, say so: <a href="mailto:${escapeHtml(CONTACT_EMAIL)}">${escapeHtml(CONTACT_EMAIL)}</a>. Corrections are made to the recipe itself rather than buried in a comment thread.</p>` : '';
 
   const content = `<div class="prose">
-        <p class="lede">Eight American classics, written out in full &mdash; with the technique and the reasoning that most recipes leave out.</p>
+        <p class="lede">Eight American classics, written out in full &mdash; and honest about which ones are better the next day.</p>
 
-        <p>${SITE_NAME} is deliberately small. Eight dishes across four courses and nothing else: pancakes and biscuits for the morning, smash burgers and fried chicken for dinner, ribs and baked macaroni for the middle of the table, apple pie and cheesecake for afterwards. Each one is written out completely, the way a cook would explain it to someone standing next to them.</p>
+        <p>${SITE_NAME} is a deliberately short list. Eight dishes across four courses: pancakes and biscuits, smash burgers and fried chicken, ribs and baked macaroni, apple pie and cheesecake. Eight recipes written out properly beats four hundred written badly, and a list this size means every one of them has been thought through rather than filled in.</p>
 
-        <h2>How these recipes are written</h2>
-        <p>Every recipe follows one rule: a step has to tell you what to look for, not only how long to wait. Timings depend on your pan, your oven, your altitude and the water in your butter. Cues do not.</p>
+        <h2>What comes back well</h2>
+        <p>Recipes rarely admit which dishes survive a night in the fridge. These do.</p>
         <ul>
-          <li><strong>Doneness is a cue, not a clock.</strong> Pancakes are ready to turn when the edges go matte and the bubbles stay open. Ribs are done when the rack bends to a deep arch and the surface cracks across the top. A cheesecake comes out of the oven while the middle still wobbles as a single piece.</li>
+          <li><strong>Better tomorrow.</strong> The cheesecake, genuinely &mdash; its texture is not finished until it has been cold for eight hours, so the slice you cut the next day is the one the recipe was aiming at all along.</li>
+          <li><strong>Reheats well, in an oven.</strong> Fried chicken, ribs and baked macaroni all come back close to new at 350&deg;F on a rack. A microwave steams the crust off every one of them.</li>
+          <li><strong>Eat it now.</strong> Smash burgers have about a two-minute window before the crust softens, and pancakes start to go limp the moment they are stacked. Neither is a leftover. Both are worth making only for people already at the table.</li>
+        </ul>
+
+        <h2>How the recipes are written</h2>
+        <p>A step has to tell you what to look for, not only how long to wait. Your pan, your oven and the water in your butter all differ from mine; cues don&rsquo;t. Edges going matte. Bubbles that stay open. A rack of ribs bending to a deep arch.</p>
+        <ul>
           <li><strong>The reason is part of the step.</strong> You press a biscuit cutter straight down because twisting seals the layers shut. The cheese goes into the sauce off the heat because above about 170&deg;F the proteins tighten and the sauce breaks.</li>
           <li><strong>Ingredients are listed the way you will use them.</strong> Butter frozen solid, buttermilk cold and well shaken, apples peeled and sliced a quarter inch thick. The preparation is part of the measurement.</li>
           <li><strong>Nothing vague.</strong> No &ldquo;cook until done&rdquo;, and no &ldquo;season to taste&rdquo; standing in for an amount.</li>
@@ -557,20 +564,20 @@ function buildAbout() {
 
         <h2>What the difficulty ratings mean</h2>
         <ul>
-          <li><strong>Easy.</strong> One main technique, no special equipment, and forgiving of small mistakes &mdash; pancakes, smash burgers, baked macaroni.</li>
-          <li><strong>Medium.</strong> One moment that needs your full attention: a roux that must not brown, butter that has to stay cold, a rack of ribs that has to be tested by hand instead of by the clock.</li>
+          <li><strong>Easy.</strong> One technique, no special equipment, forgiving of small mistakes &mdash; pancakes, smash burgers, baked macaroni.</li>
+          <li><strong>Medium.</strong> One moment that needs your full attention: a roux that must not brown, butter that has to stay cold.</li>
           <li><strong>Hard.</strong> A thermometer is not optional and there is a real way to fail &mdash; oil that drifts out of range, a cheesecake that cracks, a pie with a raw bottom crust.</li>
         </ul>
 
         <h2>Using the site</h2>
         <ul>
-          <li><strong>Servings.</strong> The stepper on each recipe rescales every ingredient amount. It deliberately does not touch the timings or the pan size &mdash; double a cake and you need a bigger tin and longer in the oven, and no recipe can work that out for you.</li>
+          <li><strong>Servings.</strong> The stepper rescales every ingredient amount, and deliberately leaves the timings and the pan size alone &mdash; double a cake and you need a bigger tin and longer in the oven, which no recipe can work out for you.</li>
           <li><strong>Keeping your place.</strong> Tick a step to strike it through. The ticks clear when you close the page; nothing is saved and nothing is sent anywhere.</li>
-          <li><strong>Printing.</strong> Recipes print as ingredients and method. The navigation, the related recipes and the photograph are dropped to save ink, and the photo credit is kept.</li>
+          <li><strong>Printing.</strong> Recipes print as ingredients and method. The navigation and the photograph are dropped to save ink, and the photo credit stays.</li>
         </ul>
 
         <h2>About the photographs</h2>
-        <p>The photographs are openly licensed pictures of each dish taken by other cooks and photographers. They are not studio shots of these particular recipes, and they are here to show you what the finished dish looks like rather than to prove anything. Every one permits commercial use, is stored on this site rather than linked from someone else&rsquo;s server, and credits its photographer and license below.</p>
+        <p>These are openly licensed photographs of each dish, taken by other cooks and photographers. They are not studio shots of these particular recipes &mdash; they are here to show you roughly what you are aiming at. Every one permits commercial use, is stored on this site rather than hotlinked from someone else&rsquo;s server, and credits its photographer and license below.</p>
         <ul class="credits-list">
           ${list}
         </ul>${corrections}
@@ -580,7 +587,7 @@ function buildAbout() {
     BASE: base,
     OG_TYPE: 'website',
     PAGE_TITLE: `About — ${SITE_NAME}`,
-    META_DESCRIPTION: 'How these eight American recipes are written — doneness by cue rather than by timer — what the difficulty ratings mean, and full credit for every photograph.',
+    META_DESCRIPTION: 'Eight American classics written out in full, which ones are better the next day, what the difficulty ratings mean, and full credit for every photograph.',
     OG_TITLE: `About — ${SITE_NAME}`,
     OG_IMAGE: ogImage(null, base),
     HEADER: header(base, 'about'),
