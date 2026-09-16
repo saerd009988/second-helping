@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PAGE_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:site_name" content="Second Helping">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#17181c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Newsreader:wght@600;700&display=swap">
+<link rel="stylesheet" href="{{BASE}}assets/css/global.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+{{HEADER}}
+<main id="main">
+  <div class="wrap">
+    <section class="section" aria-labelledby="page-heading">
+      <h1 id="page-heading">Every recipe</h1>
+      <p class="lede">Eight American classics. Narrow them by course or difficulty, or search by name, ingredient or tag.</p>
+
+      <div class="filters" data-filters>
+        <div class="field">
+          <label for="recipe-search">Search</label>
+          <input type="search" id="recipe-search" placeholder="pancakes, ribs, buttermilk&hellip;" autocomplete="off" data-filter-search>
+        </div>
+        <div>
+          <span class="chips-label" id="course-label">Course</span>
+          <div class="chips" role="group" aria-labelledby="course-label">
+            {{CATEGORY_CHIPS}}
+          </div>
+        </div>
+        <div>
+          <span class="chips-label" id="level-label">Difficulty</span>
+          <div class="chips" role="group" aria-labelledby="level-label">
+            {{DIFFICULTY_CHIPS}}
+          </div>
+        </div>
+      </div>
+
+      <p class="result-count" role="status" aria-live="polite" data-result-count>{{RECIPE_COUNT}} recipes shown</p>
+
+      <div class="grid">
+        {{ALL_CARDS}}
+      </div>
+
+      <p class="empty-state" data-empty-state hidden><strong>Nothing matches that.</strong>Clear the search box or choose All to see every recipe again.</p>
+    </section>
+  </div>
+</main>
+{{FOOTER}}
+<script src="{{BASE}}assets/js/app.js" defer></script>
+</body>
+</html>

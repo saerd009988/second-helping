@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PAGE_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:site_name" content="Second Helping">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#17181c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Newsreader:wght@600;700&display=swap">
+<link rel="stylesheet" href="{{BASE}}assets/css/global.css">
+<script type="application/ld+json">{{JSON_LD}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+{{HEADER}}
+<main id="main">
+  <div class="wrap">
+    <div class="recipe-head">
+      <p class="crumbs"><a href="{{BASE}}index.html">Home</a> &rsaquo; <a href="{{BASE}}categories/{{CATEGORY_SLUG}}.html">{{CATEGORY_NAME}}</a></p>
+      <h1>{{RECIPE_TITLE}}</h1>
+      <p class="lede">{{RECIPE_DESCRIPTION}}</p>
+    </div>
+
+    <figure class="figure">
+      <img src="{{BASE}}assets/images/{{IMAGE_FILE}}" alt="{{IMAGE_ALT}}" width="1200" height="675" fetchpriority="high">
+      <figcaption>{{IMAGE_CREDIT}}</figcaption>
+    </figure>
+
+    <dl class="facts">
+      <div><dt>Prep</dt><dd>{{PREP}}</dd></div>
+      <div><dt>Cook</dt><dd>{{COOK}}</dd></div>
+      <div><dt>Total</dt><dd>{{TOTAL}}</dd></div>
+      <div><dt>Serves</dt><dd>{{SERVINGS_NUMBER}}</dd></div>
+      <div><dt>Difficulty</dt><dd>{{DIFFICULTY}}</dd></div>
+    </dl>
+
+    <div class="recipe-layout">
+      <section class="ticket" aria-labelledby="ingredients-heading">
+        <h2 id="ingredients-heading">Ingredients</h2>
+        <div class="stepper" data-stepper data-base-servings="{{SERVINGS_NUMBER}}" data-servings-noun="servings">
+          <button type="button" data-servings-step="-1" aria-label="Fewer servings">&minus;</button>
+          <output data-servings-output aria-live="polite">{{SERVINGS}}</output>
+          <button type="button" data-servings-step="1" aria-label="More servings">+</button>
+        </div>
+        <ul class="ingredients">
+          {{INGREDIENTS}}
+        </ul>
+      </section>
+
+      <div class="method">
+        <section aria-labelledby="steps-heading">
+          <h2 id="steps-heading">Method</h2>
+          <ol class="steps">
+            {{STEPS}}
+          </ol>
+        </section>
+
+        <div class="prose">
+          {{BODY}}
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--related" aria-labelledby="related-heading">
+      <div class="section__head">
+        <h2 id="related-heading">Cook this next</h2>
+        <a class="section__link" href="{{BASE}}recipes.html">All recipes</a>
+      </div>
+      <div class="grid">
+        {{RELATED_CARDS}}
+      </div>
+    </section>
+  </div>
+</main>
+{{FOOTER}}
+<script src="{{BASE}}assets/js/app.js" defer></script>
+</body>
+</html>

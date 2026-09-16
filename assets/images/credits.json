@@ -1,0 +1,74 @@
+{
+  "apple-pie": {
+    "file": "apple-pie.jpg",
+    "title": "11/21: Apple pie and my first diamond lattice crust!",
+    "creator": "axmai",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "source": "https://www.flickr.com/photos/17160135@N04/8207307501",
+    "placeholder": false
+  },
+  "baby-back-ribs": {
+    "file": "baby-back-ribs.jpg",
+    "title": "Spareribs and Corn",
+    "creator": "Chuck.falzone",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/15450567@N04/4579795433",
+    "placeholder": false
+  },
+  "biscuits-and-sausage-gravy": {
+    "file": "biscuits-and-sausage-gravy.jpg",
+    "title": "Mmm... biscuits with spicy sausage gravy",
+    "creator": "jeffreyw",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/7927684@N03/6864966600",
+    "placeholder": false
+  },
+  "buttermilk-fried-chicken": {
+    "file": "buttermilk-fried-chicken.jpg",
+    "title": "Hank's Fried Chicken + Waffle",
+    "creator": "snowpea&bokchoi",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/28531775@N06/4384414281",
+    "placeholder": false
+  },
+  "buttermilk-pancakes": {
+    "file": "buttermilk-pancakes.jpg",
+    "title": "Short Stack with Bacon and Maple - Il Fornaio AUD13",
+    "creator": "avlxyz",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "source": "https://www.flickr.com/photos/10559879@N00/5053687131",
+    "placeholder": false
+  },
+  "mac-and-cheese": {
+    "file": "mac-and-cheese.jpg",
+    "title": "Baked Mac & Cheese",
+    "creator": "ohmeaghan",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/38482926@N00/4468789960",
+    "placeholder": false
+  },
+  "new-york-cheesecake": {
+    "file": "new-york-cheesecake.jpg",
+    "title": "Almond Cheesecake",
+    "creator": "scubadive67",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/71217725@N00/1905665",
+    "placeholder": false
+  },
+  "smash-burgers": {
+    "file": "smash-burgers.jpg",
+    "title": "Mmm...cheeseburger-homemade honey mustard",
+    "creator": "jeffreyw",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://www.flickr.com/photos/7927684@N03/5065415951",
+    "placeholder": false
+  }
+}
